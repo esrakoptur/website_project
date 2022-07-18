@@ -9,27 +9,35 @@ body {
     margin: 0;
 }
 
-.navbar {
+.logo{
+    height: 65px;
+    width:65px;
+    padding: 10px; 
+}
+#navbar {
     overflow: hidden;
     position: fixed;
     top: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
+    
 }
 
-.navbar a {
-    float: left;
+#navbar a {
     width: 20%;
     text-align: center;
     padding: 12px 0;
     color: black;
     font-size: 26px;
+
 }
 
-.navbar a:hover {
+#navbar a:hover {
     background: #776483;
-    color: black;
+    color: white;
 }
+
+
 
 .main {
     background-color: white;
@@ -45,7 +53,7 @@ body {
 .mid {
     background-color: #bbaab8;
     margin-top: 6%;
-    border-radius: 3%;
+    border-radius: 1%;
     padding: 5%;
     height: 100%;
     width: 100%;
@@ -67,6 +75,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     top: 40%;
     left: 20%;
+    letter-spacing: 5px;
 }
 
 .images {
@@ -74,32 +83,77 @@ body {
     padding: 10px;
 }
 
-.images>img {
-    border-radius: 30px;
-    height: 200px;
-    width: 100%;
-    margin: auto;
+.images-container{
+    flex-wrap: nowrap;
 }
 
-.images1{
-    height: 250px !important;
+.gap{
+    gap: 20px;
 }
-.images2{
-    height: 120px !important;
+
+.images{
+    object-fit: contain;;
+    margin: auto;
+    padding: 10px;
+}
+
+.images1 {
+    height: 100% !important;
+}
+
+.images2 {
+    height: 100% !important;
 }
 
 .half {
     width: 50%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 925px) {
     .half {
         width: 100%;
+        align-items: center;
     }
+    .images-container{
+        flex-wrap: wrap;
+        margin-top: 20px;
+       
+    }
+    .navbar {
+        background-color: white;
+    }
+
 }
 
 .justify-center {
     justify-content: center;
+}
+.items-center {
+   align-items: center;
+}
+
+.itembg {
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    height: 150px;
+  
+}
+
+.item1 {
+    background: black;
+}
+
+.item2 {
+    background: black;
+}
+
+.item3 {
+    background: white;
+}
+
+.item4 {
+    background: black;
 }
 
 /* .images1 {

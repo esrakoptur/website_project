@@ -6,17 +6,18 @@
     <title>Programming Languages</title>
     <link rel="icon" href="images/icon_project.webp" type="png">
     <link rel="stylesheet" href="style.css" />
+    <script src="navbar.js"></script>
 
 
 </head>
 
 <body class="main">
 
-    <div class="navbar">
-        <a href="first_page.html"> <img src="images/icon_project.webp" alt="logo" height="35px" width="35px"> </a>
+    <div class="flex justify-center" id="navbar" >
+         <img src="images/icon_project.webp" alt="logo" class="logo"> </a>
         <a href="first_page.html">Home</a>
         <a href="news.html">News</a>
-        <a href="#contact">Contact</a>
+        <a href="contact.html">Contact</a>
     </div>
 
 
@@ -24,9 +25,11 @@
     <div class="container">
         <div class="flex flex-wrap mid">
             <div class="half">
-                <h1 class="text"> Lorem ipsum <b> dolor </b> sit amet </h1>
-                <h2> consectetur adipisicing elit, <i> sed do eiusmod tempor </i>
+                <h1 class="text" > Lorem ipsum <b> dolor </b> sit amet </h1>
+                <br>
+                <h2  > Consectetur adipisicing elit, <i> sed do eiusmod tempor </i>
                     incididunt ut labore et dolore magna aliqua.</h2>
+                <br>
                 <h3> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat.
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -36,15 +39,25 @@
                     laborum. </h3>
             </div>
             <div class="half flex justify-center">
-                <div class="flex flex-wrap">
-                    <div class="images half">
-                        <img class="images1" src="images/php.jpg" alt="php">
-                        <img class="images2" src="images/node_js.jpeg" alt="node js">
+                <div class="flex images-container gap">
+                    <div class="half gap flex flex-col">
+                        <div class="itembg item1 flex justify-center items-center">
+                            <img class="images1 images" src="images/php4.png" alt="php">
+                        </div>
+                        <div class="itembg item2 flex justify-center items-center">
+                            <img class="images2 images" src="images/node_js4.png" alt="node js">
+                        </div>
                     </div>
-                    <div class="images half">
-                        <img class="images2" src="images/socket_io.jpg" alt="socket io">
-                        <img class="images1" src="images/ngingx.jpg" alt="nginx">
-                        <img class="images2" src="images/node_js.jpeg" alt="node js">
+                    <div class="gap half flex flex-col">
+                        <div class="itembg item3 flex justify-center items-center">
+                            <img class="images2 images" src="images/socket_io4.png" alt="socket io">
+                        </div>
+                        <div class="itembg item4 flex justify-center items-center">
+                            <img class="images1 images" src="images/nginx.png" alt="nginx">
+                        </div>
+                        <div class="itembg item3 flex justify-center items-center">
+                            <img class="images2 images" src="images/node_js4.png" alt="node js">
+                        </div>
                     </div>
                 </div>
 
